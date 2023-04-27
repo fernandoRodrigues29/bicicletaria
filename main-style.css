@@ -1,0 +1,116 @@
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: sans-serif;
+		}
+		html,body{
+			display: grid;
+			height: 100%;
+			place-items:center;
+			text-align: center;
+			background: #f2f2f2; 
+		}
+		
+		main{
+			min-height: 100vh;
+			min-width: 100vw;
+			overflow-x: hidden;
+		}
+		
+		.base-section{
+			min-width: 100vw;
+			min-height: 100vh;
+		}
+		
+		.cabecalho {
+			border:0px solid red;
+			background-color: #d0d0d073;
+		}
+		
+		.corpo {
+			border:0px solid red;
+			background-color: #d0d0d0a8;
+		}
+
+		.rodape {
+			border:0px solid red;
+			background-color: #ececec;
+		}
+		/*header*/
+		.cabecalho{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			position: relative;
+		}
+		
+		.headerNav{
+			max-width: 90vw;
+			min-width: 90vw;
+			display: flex;
+			justify-content: space-between;
+			margin-top: 4%;
+			align-items: center;
+		}
+		.headerNav .logo{
+			width: 20px;
+			height: 20px;
+			background-color: orange;
+		}
+		.headerNav .barraNavLinks{
+			
+		}
+		
+		.headerNav .barraNavLinks ul{
+			display: flex;
+			list-style: none;
+		}
+		.headerNav .barraNavLinks  a{
+			width: 70px;
+			height: 35px;
+			text-align: center;
+			align-items: center;
+			border:1px solid #ccc;
+			color: orange;
+			text-decoration: none;
+			padding: 7px;
+			margin-left: 2px;
+		}
+		section.headTitle {
+		    margin-top: 10%;
+		}
+		/*corpo*/
+		.corpo{
+			display: flex;
+			justify-content: center;
+		}
+		
+		.cards-principal{
+			display: flex;
+		    min-width: 70vw;
+		    justify-content: space-around;
+		    align-content: center;
+		    align-items: center;
+		}
+		 .cards-principal > .card {
+		    min-width: 20vw;
+		    position: relative;
+		    background: #8d8d8d;
+		    min-height: 25vw;
+		    text-align: center;
+		    border-radius: 15px;
+		    padding-top: 50px;
+		}
+		/*rodape*/
+		footer.base-section.rodape {
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		}
+		.info-rodape{
+			min-height: 30vh;
+    		display: grid;
+		}

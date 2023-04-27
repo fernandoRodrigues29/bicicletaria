@@ -1,0 +1,274 @@
+		@import url('https://fonts.cdnfonts.com/css/a-another-tag');
+		@import url('../font/TtRoadBikeRegular-L3VZZ.ttf');
+		@font-face{
+			font-family: 'TT Road Bike';
+			src:url('./font/TtRoadBikeRegular-L3VZZ.ttf');
+		}
+		
+		:root{
+			--principal:#1F61A5;
+			--secundaria:#FD6A1F;
+			--terceiro:#63DD1B;
+		}
+		
+		header {
+		    background: url(./img/bg001.jpg);
+		    background-size: 100% 100%;
+		}
+
+		section.headTitle {
+			display: flex;
+    		justify-content: flex-end;
+    		min-width: 93vw;
+		}
+		.d-none{
+			display: none;
+		}
+		.headerNav .logo{
+			 font-family: 'a Another Tag', sans-serif;
+			 font-size: 3em;
+    		 background: transparent;
+    		 color: var(--secundaria);
+    		  text-shadow: 1px 1px 3px #0a0641;
+		}
+
+		.boxTexto {
+		    max-width: 35em;
+		    border: 0px solid #ccc;
+		    padding: 1em 2em;
+		    text-align: left;
+		    display: grid;
+		}
+
+		p.titulo {
+			font-size: 7em;
+		    font-family: 'a Another Tag', sans-serif;		    
+		    letter-spacing: -1px;
+		    font-palette: dark;
+		    color: #fff;
+		    text-shadow: 5px 3px 6px #0e0e0e, -1px -5px 7px #000a2d, -3px 4px 5px #310235;
+		    color: var(--secundaria);
+
+		}
+
+		p.sub-titulo {
+		    font-size: 24px;
+		    margin-top: 16px
+		}
+		.btn-header{
+			text-align: center;
+		    padding: 16px 23px;
+		    border-radius: 12px;
+		    border: none;
+		    background-color: #249508;
+		    color: #fff;
+		    margin-left: 0%;
+		    outline: none;
+		    box-shadow: none;
+		    border: 0;
+		    font-size: 1.4em;
+		    margin-top: 32px;
+		    box-shadow: 0px 3px 10px #0101236b;
+		    text-decoration: none;
+		    max-width: 19em;
+		}
+
+		    /*servicos*/
+		    .cards-principal {
+			    display: flex;
+			    min-width: 70vw;
+			    max-width: 75vw;
+			    width: calc(100vw - 25vw);
+			    align-content: center;
+			    justify-content: space-around;
+			    margin: 0 auto;
+			}
+
+		    .servicos{
+		    	flex-direction: column;
+		    	padding-top: 10vh;
+		    	padding-bottom: 10vh;
+		    	background: #f2f2f2;
+		    }
+		    
+		    .card-descriptions{
+		    	margin-bottom: 40px;
+		    }
+		    .card-descriptions .title {
+			    margin-bottom: 24px;
+			    font-weight: 700;
+			    font-size: 5em;
+			    color: var(--secundaria);
+			    letter-spacing: 13px;
+			    font-family: 'a Another Tag', sans-serif;
+			    text-shadow: 1px 1px 3px #0a0641;
+		    }
+
+		    .card-descriptions .description {
+		    	text-align: left;
+		    	display: grid;
+		    	justify-content: center;
+		    }
+
+		    .card-descriptions .description p  {
+		    	max-width: 70vw;
+			    font-size: 1.2em;
+			    color: #02011d;
+		    }
+
+		    .cards-principal > .card {
+			    background: #fff;
+			    border: 0px solid #a4a4a4;
+			    padding: 0;
+			    max-width: 300px;
+			    display: grid;
+    		    align-content: space-between;
+    		    position: relative;
+    		    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+			    overflow: hidden;
+			    transition: .4s linear;
+			    color: #020f25;
+			    height: 36em;
+			}
+			
+			.cards-principal .card .imgBox{
+				height: 300px;
+				background: black;
+				overflow: hidden;	
+			}
+			
+			.cards-principal .card .imgBox img{
+				width: 100%;
+				height: 100%;
+				transition: .3s;	
+			}
+			.card:hover .imgBox img{
+				opacity: 0.6;
+				transform: scale(1.1);
+			}
+			
+			.card .logoInfo {
+			    font-family: 'TT Road Bike', sans-serif;
+			    background-color: #8B635C;
+			    padding: 4px 11px;
+			    border-radius: 50%;
+			    position: absolute;
+			    top: 300px;
+			    left: 50%;
+			    transform: translate(-50%, -50%);
+			    font-size: 40px;
+			    display: grid;
+			    align-items: center;
+			    width: 80px;
+			    height: 80px;
+			    text-align: center;
+			    color: #020f25;
+			}
+
+
+			.descBox{
+				padding: 24px 24px;
+				text-align: center;
+				/*margin-top: 3em;*/
+			}	
+			.descBox .tituloDesc{
+				color: #333333;
+				font-size:24px; 
+				font-weight: 600;
+			}
+			.descBox .textoDesc{
+				color: #555555;
+				font-size: 16px;
+				margin-top: 10px;
+				line-height: 1.8em;
+				min-height: 100px;
+			}
+
+			.btn-info{
+				margin-top: 10px;
+				float: left;
+				padding: 7px 15px;
+				font-size: 17px;
+				background-color: #e74c3c;
+				color: #fff;
+				font-weight: 500;
+				border:none;
+				margin: 10px 0;
+				cursor: pointer;
+				transition: .3s ease;
+
+				font-family: TT_Road Bike Regular;
+			}
+			.btn-info:hover{
+				transform: scale(0.9);
+			}
+
+			/*rodape*/
+			.rodape_infos
+			{
+				width: 50vw;
+			    background: #93A29B;
+			    display: flex;
+			    justify-content: space-between;
+			}
+			.rodape_infos .secao_esquerda
+			{
+				width: 25vw;
+			    height: 25vw;
+			    background: black;
+			}
+			
+			.rodape_infos #lista_endereco
+			{
+				padding: 3em 5em;
+			    height: 15em;
+			    display: grid;
+			}
+
+			ul.lista_horarios_rodape {
+			    list-style: none;
+			}
+
+		    /*media query*/
+			@media screen and (max-width: 425px){
+			    .rodape_infos #lista_endereco {
+				    padding: 1em 1em;
+				}
+			}
+
+		    @media screen and (max-width: 768px){
+		    	.boxTexto {
+				    text-align: center;
+				}
+
+		    	.cards-principal {
+				    gap: 16px;
+				    flex-direction: column;
+				}
+
+				.rodape_infos {
+				    width: 50vw;
+				    background: #93A29B;
+				    display: flex;
+				    justify-content: space-between;
+				    flex-direction: column;
+				}
+
+				.rodape_infos .secao_esquerda {
+				    width: 100%;
+				    height: 380px;
+				    background: transparent;
+				}
+				
+				.secao_direita {
+				    padding-bottom: 3em;
+				}
+		    }
+
+		    @media screen and (max-width: 1024px){
+			    .cards-principal {
+				    display: flex;
+				    gap: 2em;
+				}
+			}    
+		    /*fim media query*/
